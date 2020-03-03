@@ -365,6 +365,10 @@ public class AndroidGraphics implements Graphics, Renderer {
 		}
 	}
 
+	public void forcePause(){
+		pause = false;
+	}
+
 	void pause () {
 		synchronized (synch) {
 			if (!running) return;
